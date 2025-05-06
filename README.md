@@ -28,6 +28,8 @@ We will post info about releases here in the releases section of the repo. If yo
 
 ## Pull Requests / Code Submission
 
-This repository does not include any source code - source code is included with your CappyHappy purchase when you buy it on our website, under the GNU General Public License v3 or later. Should you want to submit a pull request, email us the changed code. If this doesn't work for you, we may be happy to give you access to a GitHub repository.
+This repository does not include any source code - CappyHappy is not open source. We tried GPL, but decided before release that we have financial priorities. Let us know by email if you have any concerns related to this - and if the project ever becomes abandoned we'll be sure to open-source it.
 
-Happy bug hunting, and we thank you for your contributions!
+Be wary of our proprietary license - violation could mean legal consequences.
+
+## Happy bug hunting, and we thank you for your contributions!
