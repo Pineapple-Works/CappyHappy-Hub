@@ -1,35 +1,76 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: "[DETAILED DESCRIPTIVE BUG NAME]"
-labels: bug
-assignees: ''
+name: Bug Report
+description: Create a detailed bug report to help us improve
+title: "[DETAILED DESCRIPTIVE SHORT BUG NAME]"
+labels: [bug]
+assignees: []
 
----
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <p align="center"><em>Thank you for filing a bug report!</em></p>
 
-**Describe the bug**
-A clear and concise description of what the bug is. Not "it's broken" or "it looks weird" - something like "when Cappy poops, the pooping sound loops infinitely while continuing its behaviour, until you quit the app."
+        > [!IMPORTANT]
+        > - Please provide descriptive titles. Bad titles do more harm than good.
+        > - Please search existing issues to avoid creating duplicates.
+        > - For enhancement requests, please use the Feature Request form instead.
+        > - Please describe the issue clearly and provide steps to reproduce it along with screenshots, videos, or logs if possible.
 
-**To Reproduce**
-Steps to reproduce the behaviour. If possible, try to make it so these steps *always* lead to the bug (or tell us otherwise):
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. Feed the capybara
-4. See error (described well above)
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: Provide a clear, detailed, and concise description of the bug. Avoid vague titles like "it's broken or "doesn't work".
+      placeholder: eg. When Cappy poops, the sound loops infinitely until you quit the app.
+    validations:
+      required: true
 
-**Expected behaviour**
-A clear and concise description of what you expect to happen (but something else happens instead).
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide numbered steps to reproduce this issue so developers can replicate them.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Feed the capybara
+        4. Wait for the pooping event
+        5. Event occurs normally
+        5. Observe the error: sound loops forever
+    validations:
+      required: true
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: input
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+      placeholder: eg. The sound plays once, then stops.
+    validations:
+      required: true
 
-**System Info (please complete the following information):**
- - OS: [e.g. macOS Ventura 13.2.1]
- - Device: [e.g. 2022 M2 MacBook Air 13" 8GB/256GB]
- - CappyHappy Version [e.g. v0.0.1]
- - Any other important info related to your system
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or videos
+      description: Add screenshots or videos to help explain the problem, if applicable.
 
-**Additional context**
-Add any other context about the problem here. Be as detailed as you can, but try to only submit relevant info. If you don't know, you can probably add it (but censor out personal details.)
-Include relevant logs by running the CappyHappy executable in the terminal (let us know if you need help with this)
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Information
+      description: Please provide details about your environment.
+      placeholder: |
+        - OS: macOS Ventura 13.2.1
+        - Device: 2022 M2 MacBook Air 13" 8GB/256GB
+        - CappyHappy Version: v0.0.1 (beta)
+        - Other relevant details
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other relevant context, logs, or information here. Please censor personal details.
+    placeholder: eg. The Capybara continues with its AI events like normal after this, but the sound loops forever. Note that other sounds, like walking or feeding, still play on top of this looping sound.
