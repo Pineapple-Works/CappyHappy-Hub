@@ -1,5 +1,5 @@
 name: Bug Report
-description: Create a detailed bug report to help us improve
+description: File a bug report to help us improve
 title: "[DETAILED DESCRIPTIVE SHORT BUG NAME]"
 labels: [bug]
 assignees: []
@@ -9,13 +9,12 @@ body:
     attributes:
       value: |
         <p align="center"><em>Thank you for filing a bug report!</em></p>
-
         > [!IMPORTANT]
         > - Please provide descriptive titles. Bad titles do more harm than good.
         > - Please search existing issues to avoid creating duplicates.
         > - For enhancement requests, please use the Feature Request form instead.
         > - Please describe the issue clearly and provide steps to reproduce it along with screenshots, videos, or logs if possible.
-
+  
   - type: textarea
     id: bug-description
     attributes:
